@@ -11,7 +11,7 @@ function setup() {
 
   // Create and position reset button
   let resetBtn = createButton("Reset");
-  resetBtn.position(windowWidth / 2 - 25, height + 480);
+  resetBtn.position(windowWidth / 2 - 25, height + 280);
   resetBtn.mousePressed(resetSimulation);
 }
 
