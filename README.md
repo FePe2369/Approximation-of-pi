@@ -1,4 +1,4 @@
-# Monte Carlo π Approximation 🎯
+# Monte Carlo π Approximation v1.0
 
 A visual and interactive demonstration of the Monte Carlo method for approximating the value of π using randomly distributed points.
 
@@ -83,4 +83,4 @@ Feel free to use, modify, and distribute this project for educational purposes.
 **Felipe Pereira**
 a.k.a FePe23 :3
 
-Thanks for passing by!! 🎯
+Thanks for passing by!!
