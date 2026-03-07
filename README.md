@@ -1,4 +1,4 @@
-# 🎲 Monte Carlo π Approximation
+# Monte Carlo π Approximation
 
 An interactive visualization of the Monte Carlo method for approximating π through random sampling. Built with p5.js and modern web technologies.
 
@@ -6,7 +6,7 @@ An interactive visualization of the Monte Carlo method for approximating π thro
 ![p5.js](https://img.shields.io/badge/p5.js-1.7.0-ED225D)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 
-## 🎯 What is this?
+## What is this?
 
 This project demonstrates how we can approximate the value of π using random sampling and probability. By randomly placing points in a square and counting how many fall inside an inscribed circle, we can estimate π using the simple ratio:
 
@@ -16,23 +16,23 @@ This project demonstrates how we can approximate the value of π using random sa
 
 The more points we use, the better our approximation becomes!
 
-## ✨ Features
+## Features
 
-### 📊 Real-time Statistics
+### Real-time Statistics
 
 - Live π approximation as points are generated
 - Current error from actual π value
 - Percentage of points inside vs outside
 - Visual progress bar
 
-### 🎮 Interactive Controls
+### Interactive Controls
 
 - **Adjustable point count**: From 100 to 100,000 points
 - **Variable speed**: 5 speed levels (Very Slow to Very Fast)
 - **Pause/Resume**: Control the simulation flow
 - **Instant restart**: Clear and start over anytime
 
-### 🎨 Beautiful Design
+### Beautiful Design
 
 - Modern gradient backgrounds
 - Smooth animations and transitions
@@ -40,12 +40,12 @@ The more points we use, the better our approximation becomes!
 - Responsive layout for all devices
 - Dark theme optimized for extended viewing
 
-### ⌨️ Keyboard Shortcuts
+### Keyboard Shortcuts
 
 - **Spacebar**: Pause/Resume simulation
 - **R**: Restart simulation
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ python -m http.server 8000
 # Then navigate to http://localhost:8000/montecarlo-index.html
 ```
 
-## 📖 How the Algorithm Works
+## How the Algorithm Works
 
 1. **Define a square** with side length 2r (where r is the circle radius)
 2. **Inscribe a circle** with radius r inside the square
@@ -85,7 +85,7 @@ So: `points_inside / total_points ≈ π/4`
 
 Therefore: `π ≈ 4 × (points_inside / total_points)`
 
-## 🛠️ Technical Details
+## Technical Details
 
 ### Built With
 
@@ -129,14 +129,14 @@ const piApproximation = 4 * (state.pointsInside / state.currentPoints);
 const error = Math.abs(Math.PI - piApproximation);
 ```
 
-## 📊 Performance
+## Performance
 
 - **Smooth 60 FPS** animation
 - **Batch processing** for efficient point generation
 - **Responsive design** adapts to any screen size
 - **Optimized rendering** with p5.js
 
-## 🎓 Educational Value
+## Educational Value
 
 This project is perfect for:
 
@@ -146,49 +146,14 @@ This project is perfect for:
 - Exploring the relationship between randomness and π
 - Teaching computational approximation methods
 
-## 🔬 Experimentation Ideas
+## Experimentation Ideas
 
 1. **Accuracy vs Speed**: Does slower point generation affect accuracy?
 2. **Sample Size**: How many points do you need for 4 decimal places?
 3. **Convergence**: Plot error over time - does it decrease monotonically?
 4. **Law of Large Numbers**: Observe how approximation stabilizes with more points
 
-## 🎨 Customization
-
-Want to tweak the design? Here are some ideas:
-
-### Change Colors
-
-Edit `montecarlo-style.css`:
-
-```css
-:root {
-  --primary-color: #your-color;
-  --success-color: #your-color;
-  --danger-color: #your-color;
-}
-```
-
-### Adjust Canvas Size
-
-Edit `montecarlo-script.js`:
-
-```javascript
-function setup() {
-  const canvas = createCanvas(600, 600); // Change dimensions
-  // ...
-}
-```
-
-### Modify Point Size
-
-In the `draw()` function:
-
-```javascript
-ellipse(point.x, point.y, 8, 8); // Increase from 5 to 8
-```
-
-## 📈 Expected Results
+## Expected Results
 
 | Points  | Typical Accuracy | Time (Fast Speed) |
 | ------- | ---------------- | ----------------- |
@@ -199,13 +164,13 @@ ellipse(point.x, point.y, 8, 8); // Increase from 5 to 8
 
 _Note: Due to randomness, results vary between runs_
 
-## 🐛 Known Limitations
+## Known Limitations
 
 - Very high point counts (>100k) may slow down on older devices
 - Canvas rendering is limited to browser performance
 - Statistical variance means each run produces slightly different results
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Some ideas:
 
@@ -215,30 +180,19 @@ Contributions are welcome! Some ideas:
 - Implement WebGL for better performance
 - Add export functionality for data
 
-## 📚 Learn More
+## Learn More
 
 - [Monte Carlo Method - Wikipedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 - [p5.js Documentation](https://p5js.org/reference/)
 - [Buffon's Needle Problem](https://en.wikipedia.org/wiki/Buffon%27s_needle_problem) - Another probabilistic approach to π
 
-## 📝 License
+## License
 
 This project is open source and available for educational purposes. Feel free to use, modify, and distribute!
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [p5.js](https://p5js.org/)
 - Inspired by classical Monte Carlo simulations
 - Design influenced by modern data visualization principles
 
----
-
-**Made with ❤️ and random numbers**
-
-_"In mathematics you don't understand things. You just get used to them." - John von Neumann_
-
-## 📧 Questions?
-
-Have questions or suggestions? Feel free to reach out or open an issue!
-
-**Happy approximating! 🎲**
