@@ -55,13 +55,13 @@ The more points we use, the better our approximation becomes!
 ### Running Locally
 
 1. Clone or download this repository
-2. Open `montecarlo-index.html` in your web browser
+2. Open `index.html` in your web browser
 3. Start experimenting with different point counts and speeds!
 
 ```bash
 # If you have a local server (optional)
 python -m http.server 8000
-# Then navigate to http://localhost:8000/montecarlo-index.html
+# Then navigate to http://localhost:8000/index.html
 ```
 
 ## How the Algorithm Works
@@ -98,9 +98,9 @@ Therefore: `π ≈ 4 × (points_inside / total_points)`
 
 ```
 monte-carlo-pi/
-├── montecarlo-index.html    # Main HTML structure
-├── montecarlo-style.css     # Styling and animations
-├── montecarlo-script.js     # Simulation logic
+├── index.html    # Main HTML structure
+├── style.css     # Styling and animations
+├── script.js     # Simulation logic
 └── README.md               # This file
 ```
 
